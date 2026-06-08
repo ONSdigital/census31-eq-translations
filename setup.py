@@ -23,8 +23,8 @@ except ImportError:
 setup(
     name="eq_translations",
     version=version,
-    description="Translations infrastructure for EQ Questionnaire Runner",
-    url="http://github.com/ONSdigital/eq-translations",
+    description="Translation scripts for EQ Questionnaire Schemas",
+    url="http://github.com/ONSdigital/census31-eq-translations",
     author="ONSDigital",
     author_email="",
     license="MIT",

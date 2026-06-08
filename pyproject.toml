@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "eq-translations"
 version = "1.0.0"
-description = "ONS Digital eQ Translations App"
+description = "Translation scripts for EQ Questionnaire Schemas"
 authors = ["ONSDigital"]
 
 [tool.poetry.dependencies]
