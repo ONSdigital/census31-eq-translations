@@ -42,7 +42,7 @@ poetry install -e git+https://github.com/ONSDigital/census31-eq-translations.git
 You can also install it locally running the following from the root directory:
 
 ```shell
-pip install .
+poetry install
 ```
 
 ### Basic library Usage
