@@ -1,13 +1,14 @@
-# eq-translations
+# census31-eq-translations
 
-Scripts for translating eq-survey-runner schemas 
+Scripts for translating census31-eq-questionnaire-runner schemas
 
 ## Setup
 
 It is recommended to use [Pyenv](https://github.com/pyenv/pyenv-installer) via Git
 
 Upgrade pip and install dependencies:
-```
+
+```shell
 curl https://pyenv.run | bash
 exec $SHELL
 pyenv install
@@ -34,17 +35,18 @@ poetry self add poetry-plugin-up
 
 To install, replace `BRANCHNAME` with an appropriate tag or branch and run:
 
-```
-poetry install -e git+https://github.com/ONSDigital/eq-translations.git@BRANCHNAME#egg=eq_translations
+```shell
+poetry install -e git+https://github.com/ONSDigital/census31-eq-translations.git@BRANCHNAME#egg=eq_translations
 ```
 
 You can also install it locally running the following from the root directory:
 
-```
-pip install .
+```shell
+poetry install
 ```
 
 ### Basic library Usage
+
 The library exports a `eq_translations.SurveySchema` class and `eq_translations.SchemaTranslation` class. These classes can be used directly to perform translations, or there are some helper methods available in `eq_translations.entrypoints`:
 
 `extract_template(schema_path, output_directory)`
@@ -57,31 +59,31 @@ The following scripts will also be available on your path once the package is in
 
 ## Usage without library
 
-To use this package without installing it as a python package, the following commands can be run: 
+To use this package without installing it as a python package, the following commands can be run:
 
 Extract translatable text from an eQ schema with
 
-```
+```shell
 poetry run python -m eq_translations.cli.extract_template <schema_file> <output_directory>
 ```
-This will output the translatable text to an POT file.
 
+This will output the translatable text to an POT file.
 
 After the text has been translated, create a new translated schema with:
 
-```
+```shell
 poetry run python -m eq_translations.cli.translate_schema <schema_file> <translation_path> <output_directory>
 ```
 
 To compare two schemas for differences in structure:
 
-```
+```shell
 poetry run python -m eq_translations.cli.compare_schemas <path_to_source_schema> <path_to_target_schema>
 ```
 
 To run the tests:
 
-```
+```shell
 make test
 ```
 
@@ -91,7 +93,7 @@ make test
 
 Should be prefixed with the name of the schema to translate followed by `_translate_` followed by the [country code](https://en.wikipedia.org/wiki/ISO_3166-1) of the translations in a po format e.g.
 
-```
+```shell
 <schema_name>_translate_cy.po
 ```
 
