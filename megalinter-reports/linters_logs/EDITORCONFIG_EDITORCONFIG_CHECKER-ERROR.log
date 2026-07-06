@@ -1,0 +1,12 @@
+Results of editorconfig-checker linter (version 3.7.0)
+See documentation on https://megalinter.io/9.6.0/descriptors/editorconfig_editorconfig_checker/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /tmp/lint
+Linter raw log:
+.pylintrc:
+	303: Wrong amount of left-padding spaces(want multiple of 4)
+	390: Line too long (166 instead of 160)
+
+2 errors found
+
