@@ -11,7 +11,6 @@
 # in the [python template readme](https://github.com/ONSdigital/ons-python-template#3-megalinter)
 ENABLE:
   - ACTION
-  - DOCKERFILE
   - EDITORCONFIG
   - JSON
   - MAKEFILE
