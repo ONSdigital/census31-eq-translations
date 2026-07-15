@@ -15,7 +15,7 @@ pyenv install
 pip install --upgrade pip setuptools
 ```
 
-## Install poetry, poetry dotenv plugin and install dependencies:
+## Install poetry, poetry dotenv plugin and install dependencies
 
 ``` shell
 curl -sSL https://install.python-poetry.org | python3 - --version 2.1.2

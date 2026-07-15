@@ -32,9 +32,7 @@
                 {
                     "title": "Post submission guidance title",
                     "description": "Post submission guidance description.",
-                    "list": [
-                        "Post submission guidance list item"
-                    ]
+                    "list": ["Post submission guidance list item"]
                 }
             ]
         }
@@ -119,10 +117,7 @@
                                                         "arguments": {
                                                             "delimiter": " ",
                                                             "list_to_concatenate": {
-                                                                "identifier": [
-                                                                    "first-name",
-                                                                    "last-name"
-                                                                ],
+                                                                "identifier": ["first-name", "last-name"],
                                                                 "source": "answers"
                                                             }
                                                         },
@@ -152,10 +147,7 @@
                                                     "arguments": {
                                                         "delimiter": " ",
                                                         "list_to_concatenate": {
-                                                            "identifier": [
-                                                                "first-name",
-                                                                "last-name"
-                                                            ],
+                                                            "identifier": ["first-name", "last-name"],
                                                             "source": "answers"
                                                         }
                                                     },
@@ -203,9 +195,7 @@
                                         }
                                     }
                                 ],
-                                "description": [
-                                    "The total number of people in the household"
-                                ],
+                                "description": ["The total number of people in the household"],
                                 "warning": "This is a very important question",
                                 "id": "number-of-people-question",
                                 "title": "How many people live at your household?",

@@ -32,9 +32,7 @@
                 {
                     "title": "Teitl y canllawiau ar \u00f4l cyflwyno",
                     "description": "Disgrifiad canllaw ar \u00f4l cyflwyno.",
-                    "list": [
-                        "Eitem rhestr canllawiau \u00f4l-gyflwyno"
-                    ]
+                    "list": ["Eitem rhestr canllawiau \u00f4l-gyflwyno"]
                 }
             ]
         }
@@ -83,12 +81,8 @@
                                         }
                                     ]
                                 },
-                                "instruction": [
-                                    "Rhowch enw person"
-                                ],
-                                "description": [
-                                    "Enw llawn y person"
-                                ],
+                                "instruction": ["Rhowch enw person"],
+                                "description": ["Enw llawn y person"],
                                 "id": "name-question",
                                 "title": "Rhowch enw",
                                 "type": "General",
@@ -123,10 +117,7 @@
                                                         "arguments": {
                                                             "delimiter": " ",
                                                             "list_to_concatenate": {
-                                                                "identifier": [
-                                                                    "first-name",
-                                                                    "last-name"
-                                                                ],
+                                                                "identifier": ["first-name", "last-name"],
                                                                 "source": "answers"
                                                             }
                                                         },
@@ -156,10 +147,7 @@
                                                     "arguments": {
                                                         "delimiter": " ",
                                                         "list_to_concatenate": {
-                                                            "identifier": [
-                                                                "first-name",
-                                                                "last-name"
-                                                            ],
+                                                            "identifier": ["first-name", "last-name"],
                                                             "source": "answers"
                                                         }
                                                     },
@@ -207,9 +195,7 @@
                                         }
                                     }
                                 ],
-                                "description": [
-                                    "Cyfanswm y bobl ar yr aelwyd"
-                                ],
+                                "description": ["Cyfanswm y bobl ar yr aelwyd"],
                                 "warning": "Mae hwn yn gwestiwn pwysig iawn",
                                 "id": "number-of-people-question",
                                 "title": "Faint o bobl sy\u2019n byw ar eich cartref?",

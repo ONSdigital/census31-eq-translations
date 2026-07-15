@@ -1,7 +1,6 @@
 name: PR
 
-on:
-  pull_request
+on: pull_request
 
 jobs:
   lint:
@@ -10,9 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
       - run: |
-          echo "PYTHON_VERSION=$(cat .python-version)" >> $GITHUB_ENV
-      - uses: actions/setup-python@v5
+          echo "PYTHON_VERSION=$(cat .python-version)" >> "$GITHUB_ENV"
+      - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
         with:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Install Poetry
@@ -23,7 +24,7 @@ jobs:
       - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'poetry'
+          cache: "poetry"
       - name: Install virtual environment
         run: poetry install
       - name: Lint Python
@@ -35,8 +36,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
       - run: |
-          echo "PYTHON_VERSION=$(cat .python-version)" >> $GITHUB_ENV
+          echo "PYTHON_VERSION=$(cat .python-version)" >> "$GITHUB_ENV"
       - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
         with:
           python-version: ${{ env.PYTHON_VERSION }}
@@ -48,7 +51,7 @@ jobs:
       - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'poetry'
+          cache: "poetry"
       - name: Install virtual environment
         run: poetry install
       - name: Run tests
