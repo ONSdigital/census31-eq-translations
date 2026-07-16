@@ -144,7 +144,11 @@ def test_string_objects_in_list():
                 "contents": [
                     {
                         "list": [
-                            "all part-time employees in Great Britain (England, Scotland and Wales) who received pay in the relevant period",
+                            (
+                                "all part-time employees in Great Britain "
+                                "(England, Scotland and Wales) who received pay in "
+                                "the relevant period"
+                            ),
                             {
                                 "placeholders": [
                                     {
@@ -164,7 +168,11 @@ def test_string_objects_in_list():
                                 ],
                                 "text": "all trainees on government schemes on {date}",
                             },
-                            "all full-time employees in Great Britain (England, Scotland and Wales) who received pay in the relevant period",
+                            (
+                                "all full-time employees in Great Britain "
+                                "(England, Scotland and Wales) who received pay in "
+                                "the relevant period"
+                            ),
                             {
                                 "text_plural": {
                                     "forms": {
@@ -194,7 +202,11 @@ def test_string_objects_in_list():
         TranslatableItem(
             pointer="/content/contents/0/list/0",
             description="Content page list item",
-            value="all part-time employees in Great Britain (England, Scotland and Wales) who received pay in the relevant period",
+            value=(
+                "all part-time employees in Great Britain "
+                "(England, Scotland and Wales) who received pay in the relevant "
+                "period"
+            ),
             context="Main job",
         )
         in translatable_items
@@ -217,7 +229,11 @@ def test_string_objects_in_list():
         TranslatableItem(
             pointer="/content/contents/0/list/2",
             description="Content page list item",
-            value="all full-time employees in Great Britain (England, Scotland and Wales) who received pay in the relevant period",
+            value=(
+                "all full-time employees in Great Britain "
+                "(England, Scotland and Wales) who received pay in the relevant "
+                "period"
+            ),
             context="Main job",
         )
         in translatable_items
@@ -504,20 +520,44 @@ def test_relationship_playback():
                         {
                             "label": "Husband or Wife",
                             "value": "Husband or Wife",
-                            "title": "Thinking of {first_person_name}, {second_person_name} is their <strong>husband or wife</strong>",
-                            "playback": "{second_person_name} is {first_person_name_possessive} <strong>husband or wife</strong>",
+                            "title": (
+                                "Thinking of {first_person_name}, "
+                                "{second_person_name} is their "
+                                "<strong>husband or wife</strong>"
+                            ),
+                            "playback": (
+                                "{second_person_name} is "
+                                "{first_person_name_possessive} "
+                                "<strong>husband or wife</strong>"
+                            ),
                         },
                         {
                             "label": "Legally registered civil partner",
                             "value": "Legally registered civil partner",
-                            "title": "Thinking of {first_person_name}, {second_person_name} is their <strong>legally registered civil partner</strong>",
-                            "playback": "{second_person_name} is {first_person_name_possessive} <strong>legally registered civil partner</strong>",
+                            "title": (
+                                "Thinking of {first_person_name}, "
+                                "{second_person_name} is their "
+                                "<strong>legally registered civil partner</strong>"
+                            ),
+                            "playback": (
+                                "{second_person_name} is "
+                                "{first_person_name_possessive} "
+                                "<strong>legally registered civil partner</strong>"
+                            ),
                         },
                         {
                             "label": "Son or daughter",
                             "value": "Son or daughter",
-                            "title": "Thinking of {first_person_name}, {second_person_name} is their <strong>son or daughter</strong>",
-                            "playback": "{second_person_name} is {first_person_name_possessive} <strong>son or daughter</strong>",
+                            "title": (
+                                "Thinking of {first_person_name}, "
+                                "{second_person_name} is their "
+                                "<strong>son or daughter</strong>"
+                            ),
+                            "playback": (
+                                "{second_person_name} is "
+                                "{first_person_name_possessive} "
+                                "<strong>son or daughter</strong>"
+                            ),
                         },
                     ],
                 }
@@ -552,7 +592,10 @@ def test_relationship_playback():
         TranslatableItem(
             pointer="/question/answers/0/options/1/playback",
             description="Relationships answer option playback text",
-            value="{second_person_name} is {first_person_name_possessive} <strong>legally registered civil partner</strong>",
+            value=(
+                "{second_person_name} is {first_person_name_possessive} "
+                "<strong>legally registered civil partner</strong>"
+            ),
             context="Thinking of {first_person_name}, {second_person_name} is their <strong>...</strong>",
         )
         in translatable_items
