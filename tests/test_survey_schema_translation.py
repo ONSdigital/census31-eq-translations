@@ -69,7 +69,11 @@ def test_translate():
                                     "contents": [
                                         {
                                             "title": "Feeling answer",
-                                            "description": "This should be answered to see if you are answering on behalf of someone else",
+                                            "description": (
+                                                "This should be answered to see if "
+                                                "you are answering on behalf of "
+                                                "someone else"
+                                            ),
                                         }
                                     ],
                                 },
@@ -125,7 +129,11 @@ def test_translate():
                                 "contents": [
                                     {
                                         "title": "Feeling answer",
-                                        "description": "This should be answered to see if you are answering on behalf of someone else",
+                                        "description": (
+                                            "This should be answered to see if "
+                                            "you are answering on behalf of "
+                                            "someone else"
+                                        ),
                                     }
                                 ],
                             },
@@ -208,13 +216,17 @@ def test_get_catalog():
                                 "contents": [
                                     {
                                         "title": "Feeling answer",
-                                        "description": "This should be answered to see if you are answering on behalf of someone else",
+                                        "description": (
+                                            "This should be answered to see if "
+                                            "you are answering on behalf of "
+                                            "someone else"
+                                        ),
                                     }
                                 ],
                             },
                         }
                     ],
-                }
+                },
             }
         ]
     }
@@ -683,7 +695,10 @@ def test_list_collector_repeating_blocks_translation():
                     "for_list": "companies",
                     "question": {
                         "type": "General",
-                        "title": "Do you need to add any other UK companies or branches that undertake general insurance business?",
+                        "title": (
+                            "Do you need to add any other UK companies or "
+                            "branches that undertake general insurance business?"
+                        ),
                         "answers": [
                             {
                                 "type": "Radio",
@@ -745,7 +760,11 @@ def test_list_collector_repeating_blocks_translation():
                             "question": {
                                 "type": "General",
                                 "title": {
-                                    "text": "Give details about how {company_name} has been trading over the past {date_difference}.",
+                                    "text": (
+                                        "Give details about how {company_name} "
+                                        "has been trading over the past "
+                                        "{date_difference}."
+                                    ),
                                     "placeholders": [
                                         {
                                             "placeholder": "company_name",
@@ -834,7 +853,11 @@ def test_list_collector_repeating_blocks_translation():
                 "for_list": "companies",
                 "question": {
                     "type": "General",
-                    "title": "WELSH - Do you need to add any other UK companies or branches that undertake general insurance business?",
+                    "title": (
+                        "WELSH - Do you need to add any other UK companies "
+                        "or branches that undertake general insurance "
+                        "business?"
+                    ),
                     "answers": [
                         {
                             "type": "Radio",
@@ -896,7 +919,11 @@ def test_list_collector_repeating_blocks_translation():
                         "question": {
                             "type": "General",
                             "title": {
-                                "text": "WELSH - Give details about how {company_name} has been trading over the past {date_difference}.",
+                                "text": (
+                                    "WELSH - Give details about how "
+                                    "{company_name} has been trading over the "
+                                    "past {date_difference}."
+                                ),
                                 "placeholders": [
                                     {
                                         "placeholder": "company_name",
@@ -1272,7 +1299,11 @@ def test_list_collector_content_translate():
                                 }
                             },
                             {
-                                "description": "Press continue to proceed to the next section where you can add any additional employees."
+                                "description": (
+                                    "Press continue to proceed to the next "
+                                    "section where you can add any additional "
+                                    "employees."
+                                )
                             },
                         ],
                     },
@@ -1340,7 +1371,11 @@ def test_list_collector_content_translate():
                             }
                         },
                         {
-                            "description": "WELSH - Press continue to proceed to the next section where you can add any additional employees."
+                            "description": (
+                                "WELSH - Press continue to proceed to the "
+                                "next section where you can add any "
+                                "additional employees."
+                            )
                         },
                     ],
                 },
