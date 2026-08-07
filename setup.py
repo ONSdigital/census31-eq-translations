@@ -24,7 +24,7 @@ setup(
     name="eq_translations",
     version=version,
     description="Translation scripts for EQ Questionnaire Schemas",
-    url="http://github.com/ONSdigital/census31-eq-translations",
+    url="https://github.com/ONSdigital/census31-eq-translations",
     author="ONSDigital",
     author_email="",
     license="MIT",
