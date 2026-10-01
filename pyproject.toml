@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "eq-translations"
-version = "1.0.0"
+version = "5.0.0"
 description = "Translation scripts for EQ Questionnaire Schemas"
 authors = ["ONSDigital"]
 
