@@ -18,6 +18,12 @@ ENABLE:
   - REPOSITORY
   - YAML
 
+DISABLE_LINTERS:
+  - REPOSITORY_SYFT # Generates an SBOM artifact but never fails the lint check
+  - REPOSITORY_GRYPE # Gives little value alongside dependabot CTE-339. Possibly to be reintroduced closer to release
+  - REPOSITORY_OSV_SCANNER # Gives little value alongside dependabot CTE-339. Possibly to be reintroduced closer to release
+  - REPOSITORY_TRIVY # Gives little value alongside dependabot CTE-339. Possibly to be reintroduced closer to release
+
 FORMATTERS_DISABLE_ERRORS: false
 SHOW_ELAPSED_TIME: true
 FLAVOR_SUGGESTIONS: false
